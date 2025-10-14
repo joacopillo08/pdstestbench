@@ -126,21 +126,12 @@ fig.supylabel("Amplitud")
 fig.tight_layout()
 plt.show()
 
-# # === RESPUESTA AL IMPULSO h[n] ===
-# t_h = np.arange(len(h)) * Ts
-# plt.figure(figsize=(10,4))
-# plt.stem(t_h, h, basefmt=" ")
-# plt.title("Respuesta al impulso h[n]")
-# plt.xlabel("Tiempo [s]")
-# plt.ylabel("Amplitud")
-# plt.grid(True, alpha=0.3)
-# plt.show()
 
 t_h = np.arange(len(h)) * Ts
 
 plt.figure(figsize=(10,4))
 plt.stem(t_h[:200], h[:200], basefmt=" ")
-plt.title("Respuesta al impulso h[n] — zoom 200 primeras muestras")
+plt.title("Respuesta al impulso h[n] — 200 primeras muestras")
 plt.xlabel("Tiempo [s]"); plt.ylabel("Amplitud")
 plt.grid(True, alpha=0.3); plt.tight_layout(); plt.show()
 
